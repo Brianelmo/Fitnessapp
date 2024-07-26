@@ -1,0 +1,98 @@
+.navMobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(247, 247, 247);
+    margin: 0;
+    background-color: rgb(37, 99, 235);
+}@media(min-width:768px){
+    .navMobile{
+        display: none;
+    }
+}
+
+.span{ 
+    color: white;
+    font-size: 1.2rem;
+} 
+
+.buttonMenu{
+    cursor: pointer;
+    animation: showButton forwards .2s;
+
+} 
+
+.headerMenuMobile{ 
+    display: flex;
+    border-bottom: 1px solid rgb(247, 247, 247);
+    padding: 1rem;
+    background-color:rgb(37, 99, 235) ;
+    font-size: 1.2rem;
+    color: white;
+} 
+
+
+
+.listMenu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: semibold; 
+    width: 50%;
+    border-right: 1px solid rgb(247, 247, 247);
+    animation: showMenu forwards .5s;
+    height: 90vh;
+    -webkit-box-shadow: 16.5px 1.5px 8.5px -8.5px #dbdbdb;
+    -moz-box-shadow: 16.5px 1.5px 8.5px -8.5px #dbdbdb;
+    box-shadow: 16.5px 1.5px 8.5px -8.5px #dbdbdb;
+}    
+
+.buttonClose {
+    display: flex;
+    justify-content: end;
+}
+
+.listMenu li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: showLetter normal .5s;
+}
+
+
+
+.listMenu li:hover {
+    background-color: rgb(247, 247, 247) ;
+}
+
+@keyframes showMenu {
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
+
+@keyframes showLetter {
+    from{
+        font-size: 0;
+    }
+    to{
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes showButton {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}

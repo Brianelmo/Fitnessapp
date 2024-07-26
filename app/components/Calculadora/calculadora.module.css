@@ -1,0 +1,15 @@
+.header{
+   display: flex;
+   flex-direction: column;
+   justify-content: start; 
+} 
+
+.title{
+    font-size: 0.4rem;
+} 
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+} 
