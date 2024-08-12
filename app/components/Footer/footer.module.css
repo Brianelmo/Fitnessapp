@@ -5,7 +5,13 @@
     gap: 1rem;
     padding: 1rem;
     background-color: rgb(241, 245, 249);
-} 
+} @media(min-width:768px){
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 7rem;
+    }
+}
 
 .iconDiv{
     display: flex;
